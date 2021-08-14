@@ -35,7 +35,7 @@
         
         //output
         
-        if(course_title == "" && course_code == "" && assOrLab == "" && name == "" && dept == "" && clsId == "" && profLec == "" && designation == "" && profLecDep == "" && subDate == ""){
+        if(course_title == "" && course_code == "" && assOrLab == "" && name == "" && dept == "" && clsId == "" && profLec == "" && subDate == ""){
           myref();
           $("#result1").hide();
           $("#result").hide();
