@@ -50,11 +50,12 @@
           document.getElementById('profLec_out').innerHTML = profLec;
           document.getElementById('designation_out').innerHTML = designation;
           document.getElementById('profLecDep_out').innerHTML = profLecDep;
-          var dateAr = subDate.split('-');
-          var newDate = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0].slice(-2);
-          if(document.getElementById('subDate_out').innerHTML = ""){
-              console.log("");
+          
+          if(subDate == ""){
+              console.log('');
           }else{
+            var dateAr = subDate.split('-');
+            var newDate = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0].slice(-2);
             document.getElementById('subDate_out').innerHTML = newDate;
           }
         }
