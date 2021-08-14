@@ -52,10 +52,10 @@
           document.getElementById('profLecDep_out').innerHTML = profLecDep;
           var dateAr = subDate.split('-');
           var newDate = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0].slice(-2);
-          if(newDate == ""){
-              document.getElementById('subDate_out').innerHTML = "";
+          if(document.getElementById('subDate_out').innerHTML = ""){
+              console.log("");
           }else{
-          document.getElementById('subDate_out').innerHTML = newDate;
+            document.getElementById('subDate_out').innerHTML = newDate;
           }
         }
         
