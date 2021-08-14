@@ -35,7 +35,7 @@
         
         //output
         
-        if(course_title == "" && course_code == "" && assOrLab == "" && name == "" && dept == "" && clsId == "" && profLec == "" && designation=""){
+        if(course_title == "" && course_code == "" && assOrLab == "" && name == "" && dept == "" && clsId == "" && profLec == "" && designation=""  && subDate == ""){
           myref();
           $("#result1").hide();
           $("#result").hide();
@@ -50,14 +50,9 @@
           document.getElementById('profLec_out').innerHTML = profLec;
           document.getElementById('designation_out').innerHTML = designation;
           document.getElementById('profLecDep_out').innerHTML = profLecDep;
-          
-          if(subDate == ""){
-              console.log('');
-          }else{
-            var dateAr = subDate.split('-');
-            var newDate = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0].slice(-2);
-            document.getElementById('subDate_out').innerHTML = newDate;
-          }
+          var dateAr = subDate.split('-');
+          var newDate = dateAr[2] + '-' + dateAr[1] + '-' + dateAr[0].slice(-2);
+          document.getElementById('subDate_out').innerHTML = newDate;
         }
         
         
