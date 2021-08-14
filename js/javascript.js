@@ -1,7 +1,3 @@
-    var counter = 0;
-    var total_sum;
-    var current_credit;
-
     $(document).ready(function () {
       $("#course_info").show();
       $("#submitted_by").show();
@@ -35,7 +31,7 @@
         
         //output
         
-        if(course_title == "" && course_code == "" && assOrLab == "" && name == "" && dept == "" && clsId == "" && profLec == "" && designation=""  && subDate == ""){
+        if(course_title === '' || course_code ==='' || assOrLab === '' || name === '' || dept === '' || clsId === '' || profLec === '' || subDate === ''){
           myref();
           $("#result1").hide();
           $("#result").hide();
