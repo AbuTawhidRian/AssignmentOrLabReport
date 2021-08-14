@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  margin-top: 30px;
+}
+.mainCon{
+    border: 2px solid black;
+}
+.line{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.margin{
+  margin-bottom: 180px;
+}
+
+
+@page {
+  margin: 0;
+}
+@page {
+  margin-top: 0cm;
+  margin-bottom : 0cm;
+} 
+
+
+.bordr {
+  position: relative;
+  border: 5px solid black;
+  padding: 45px;
+}
+
+.bordr:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  border: 3px double black;
+}
+

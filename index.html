@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asssignment OR Lab Cover Creator</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<script src="js/javascript.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+	<script src="jquery/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <body> 
+    <div class="container">
+      <div class=" mar_gin" style="margin: 10px">
+        <div class="card-body">
+          <div class="text-center" id="imgfirst" style="padding: 10px; margin-top: 120px; ">
+            
+            <img src="img/edu_logo.png" class="img-fluid" alt="">
+            
+          </div><br><br>
+
+<!--Course Info-->
+          <form action="" method="post">
+            <div id="course_info" >
+                <h3 class="text-left">Course Info</h3><hr>
+                <div class="form-row">
+
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="usr">Enter Your Course Title</label>
+                        <input type="text" class="form-control" id="course_title" placeholder="Digital Image Processing / Physics" required>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="usr">Enter Your Course Code</label>
+                        <input type="text" class="form-control" id="course_code" placeholder="CSE-443" required>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="usr">Assignment / Lab</label>
+                        <input type="text" class="form-control" id="assOrLab" placeholder="Assignment No: 01 / Lab No: 01" required>
+                      </div>
+                  </div>
+              </div><hr>
+            </div>
+            <!--End Course Info-->
+            <!--Submitted By-->
+            <div id="submitted_by">
+                <h3 class="text-left">Submitted By:</h2><hr>
+                <div class="form-row">
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter Your Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Abu Tawhid Rian" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter Your Department</label>
+                      <input type="text" class="form-control" id="dept" placeholder="1DCSE" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter Your Class ID</label>
+                      <input type="text" class="form-control" id="clsId" placeholder="173001622E" required>
+                    </div>
+                </div>
+              </div><hr>
+            </div>
+            <!--End Submitted By-->
+            
+            <!--Submitted TO-->
+            <div id="submitted_to">
+                <h3 class="text-left">Submitted To:</h2><hr>
+                <div class="form-row" >
+
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter Your Professor/Lecturer Name</label>
+                      <input type="text" class="form-control" id="profLec" placeholder="Mohammed Nazim Uddin (PhD)" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter his/her Designation</label>
+                      <input type="text" class="form-control" id="designation" placeholder="Associate Dean & Associate Professor" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter his/her Department</label>
+                      <input type="text" class="form-control" id="profLecDep" placeholder="School of Science, Engineering and Technology" required>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="usr">Enter Submission Date</label>
+                      <input type="date" class="form-control" id="subDate" required>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--End Submitted To-->
+
+            <div class="form-row">
+              <div class="col-sm-12">
+                <div class="text-center">
+                  <button type="button" id="next_btn" class="btn btn-outline-success btn-block">Next</button>
+                </div>
+              </div>
+            </div>
+        </form>
+         
+          <div id="result" class="bordr">
+            <div class="text-center" style="padding: 10px; margin-top: 100px; margin-bottom: 20px;">
+            
+              <img src="img/edu_logo.png" class="img-fluid" id="result1"  alt=""><br><br><br>
+              
+            </div>
+              <div class="row line">
+                <div class="col-md-12 text-center">
+                  <h2 class=""><b>Course Title: </b><b id="course_title_out"></b></h2>
+                  <h2 class=""><b>Course Code: </b><b id="course_code_out"></b></h2>
+                  <h2 class=""><b id="assOrLab_out"></b></h2><br><br><br>
+                </div>
+              </div>
+              <div class="row line">
+                <div class="col-md-12">
+                  <h2 class=""><u><b>Submitted By:</b></u></h2>
+                  <h2 class="">Name: <span id="name_out"></span></h2>
+                  <h2 class="">Department: <span id="dept_out"></span></h2>
+                  <h2 class="">ID: <span id="clsId_out"></span></h2><br>
+                </div>
+              </div>
+              <div class="row line margin">
+                <div class="col-md-12">
+                  <h2 class=""><u><b>Submitted To:</b></u></h2>
+                  <h2 class="" id="profLec_out"></h2>
+                  <h2 class="" id="designation_out"></h2>
+                  <h2 class="" id="profLecDep_out"></h2><br>
+                  <h2 class="" ><b>Date: <span id="subDate_out"></span></b></h2>
+                </div><br><br><br><br><br><br><br><br>
+                
+                <div class="col-md-12 text-center">
+                  <button onclick="myfun()" id="download_btn" type="button" class="btn btn-success m-2">Print</button>
+                  <button onclick="myref()" type="button" id="refresh" class="btn btn-warning ">Recreate Cover</button>
+                </div>
+              </div>
+          </div>
+          
+          
+        </div>
+            <div class="row" id="foot">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                  <div class="bg-dark text-center">
+                    <p style="padding:.5rem;" class="text-white">All Right Reserved &copy; <a href="https://www.facebook.com/abutawhidrian" target="_blank" class="text-warning">Rian</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <script src="js/bootstrap.js"></script>
+      <script src="js/javascript.js"></script>
+  </body>
+  
+</html>
